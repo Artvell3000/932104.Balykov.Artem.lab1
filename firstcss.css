@@ -1,22 +1,49 @@
-header, footer{
+*{
+	color: white;
+	visibility: visible;
+}
+
+a:first-child{
+	color: red;
+}
+
+.header{
 	background-color:green;
 	text-align: center;
 	padding:10px;
-	color: white;
-	font: 0.9em "Fira Sans", sans-serif;
+	font: 1.1em "Fira Sans", sans-serif;
 }
 
-#content{
-	color: white;
+.footer{
+	background-color:green;
+	text-align: center;
+	padding:10px;
+	font: 1.1em "Fira Sans", sans-serif;
+}
+
+.content{
 	background-color:blue;
-	width:450px;
+	max-width:450px;
+	min-width:400px;
 	padding:20px;
-	font: 0.9em "Fira Sans", sans-serif;
 	margin-left: auto;
     margin-right: auto;
 }
 
-#listBlock{
+.content h1{
+	font-size: xx-large;
+}
+
+body{
+	font: 0.9em "Fira Sans", sans-serif;
+}
+
+#delText{
+	text-decoration: line-through;
+}
+
+#listHeadBlock{
+	overflow: auto;
 	word-spacing: 1rem;
 }
 
@@ -26,10 +53,8 @@ header, footer{
 
 #tableBlock{
 	width:120px;
+	min-height:100px;
 	float: right;
-	position: absolute;
-    left: 950px;
-    top: 550px;
 }
 
 #likeImage{
@@ -43,36 +68,37 @@ header, footer{
 
 #squreBox{
 	float: left;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 
 #square{
+	box-sizing: content-box;
 	width:90px;
 	height:90px;
 	border: 5px solid white;
-	border-radius: 15% 0%;
-	float:left; 
+	border-radius: 15% 0%; 
 	margin-right:20px;
-}
-
-#contentTitle{
-	font-size: xx-large;
 }
 
 span.redText{
 	color: red;
 }
 
-span.blueText{
+ul{
+	list-style: outside;
+}
+
+li:nth-child(2){
 	color: #33CCCC;
 	letter-spacing: 7px;
 }
 
-ul{
-	line-height: 1.5;
+ul > li{
+	line-height: 1.9;
 }
 
 table{
+	display:inline-table;
 	border: solid 2px silver;
 }
 

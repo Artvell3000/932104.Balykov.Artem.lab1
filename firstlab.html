@@ -8,13 +8,10 @@
 <body>
 	<header class="header">Hello, Header!</header>
 	
-	<main>
-	<div id="content">
-		<section>
-			<h1 id="contentTitle">Hello, content!</h1>
-		</section>
+	<main class="content">
 		
-		<section>
+		<article>
+			<h1>Hello, content!</h1>
 			<div id="squreBox"><div id="square"></div></div>
 			<p>
 				Lorem Ipsum is simply dummy text of the printing 
@@ -28,33 +25,22 @@
 				sheets containing Lorem Ipsum passages, and more recently
 				with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 			</p>
-		</section>
+		</article>
+		
+		<nav>
+			<h4 id="link"><a href="http://www.csd.tsu.ru">www.csd.tsu.ru</a></h4>
+		</nav>
 		
 		<section>
-			<div id="link"><a href="http://www.csd.tsu.ru"><span class="redText">www.csd.tsu.ru</span></a></div>
-		</section>
-		
-		<section>
-			<h2 id="listBlock"><span class="redText">Here</span> is the list:</h2>
+			<h2 id="listHeadBlock"><span class="redText">Here</span> is the list:</h2>
 			<ul>
 				<li>Value 1</li>
-				<span class="blueText"><li>Value 2</li></span>
+				<li>Value 2</li>
 				<li>Value 3</li>
 			</ul>
 		</section>
 		
-		<section id="styleBlock">
-			<article>
-				<h3><strong>Here are some visual styles:</strong></h3>
-				<p><i>Italic</i></p>
-				<p><b>Bold</b></p>
-				<p><u>Underlined</u></p>
-				<p><del>Line through</del></p>
-			</article>
-		</section>
-		
-		
-		<section id="tableBlock">
+		<aside id="tableBlock">
 			 <table>
             <tr>
                 <td rowspan="2" style="background-color:green;">1</td>
@@ -71,11 +57,17 @@
             </tr>
 			</table>
 			<div id="likeImage">
-				<img src="images.png">
+				<img src="images.png" alt="like image"/>
 			</div>
-			
+		</aside>
+		
+		<section class="styleBlock">
+			<h3>Here are some visual styles:</h3>
+			<p><i>Italic</i></p>
+			<p><b>Bold</b></p>
+			<p><u>Underlined</u></p>
+			<p id="delText">Line through</p>
 		</section>
-	</div>
 	</main>
 	
 	<footer class="footer">Hello, Footer!</footer>
